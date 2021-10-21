@@ -8,7 +8,7 @@ const CountrySelector = ({countries, onCountrySelected}) => {
     }
 
     const countriesOptions = countries.map((country, index) => {
-        return <option value={index} key={index}>{country.name}  {country.population}</option> 
+        return <option value={index} key={index}>{country.name} {country.population}</option> 
     })
 
     return (

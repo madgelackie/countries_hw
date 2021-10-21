@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import CountriesList from '../Components/CountriesList';
 import CountrySelector from '../Components/CountrySelect';
+import CountryDetail from '../Components/CountrySelect';
 
 
 const CountryContainer = () => {
@@ -23,7 +23,10 @@ const CountryContainer = () => {
     }
 
     return(
-        <CountrySelector countries={countries} onCountrySelected={onCountrySelected}/>        
+        <>
+        <CountrySelector countries={countries} onCountrySelected={onCountrySelected} /> 
+        {selectedCountry ? <CountryDetail selectedCountry={selectedCountry} /> : null}   
+        </>    
     )
 
 }

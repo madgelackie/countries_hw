@@ -9,9 +9,15 @@
 
 //     return (
 //         <>
-//         <ul>
-//             {countriesItems}
-//         </ul>
+//         <table>
+//                 <tr>
+//                     <th>Country</th>
+//                     <th>Population</th>
+//                 </tr>
+//                 <tr>
+//                     {countriesItems} 
+//                 </tr>
+//             </table>
 //         </>
 //     )
 // }
